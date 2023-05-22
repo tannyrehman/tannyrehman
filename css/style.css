@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
 
 .container{
     width: 1200px;
     margin: 0 auto;
-    background-color: aqua;
 }
+
+
+/* header section  */
+
+header{
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
 .header-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
 }
-.logo{
+.logo a{
     color: #1B323B;
     font-size: 40px;
     font-family: 'Roboto';
     font-weight: 700;
+    text-decoration: none;
 }
 
 .nav-menu  ul {
@@ -22,9 +41,7 @@
     list-style: none;
     align-items: center; 
 }
-.nav-menu ul li{
-    
-}
+
 .nav-menu ul li a{
     text-decoration: none;
     color: #000000;
@@ -34,7 +51,7 @@
     padding: 0 20px;
       
 }
-.button{
+.contact-btn{
     color: #fff;
     background-color: #1B323B;
     padding: 8px 17px;
@@ -43,9 +60,29 @@
     font-weight: 500;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.contact-btn:hover{
+    background-color: #17463e;
 }
 
-.hero-section{
-    margin-top: 20px;
+
+/* Home Banner  */
+.hero-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 67px;
 }
 
+.hero-left h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #1B323B;
+}
+.hero-left h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #514E4E;
+}
